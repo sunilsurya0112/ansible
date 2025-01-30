@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: check roboshop user exist or not
-    ansible.builtiin.command: id roboshop
+    ansible.builtin.command: id roboshop
     register: user # user is a variable to store result of above cmd id rosboshop
     ignore_errors: true # ansible will not exist even it got error
   
