@@ -7,7 +7,7 @@
   register: user # user is a variable to store result of above cmd id rosboshop
   ignore_errors: true # ansible will not exist even it got error
   
-  - name: prinit variable value
+  - name: print variable value
     ansible.builtin.debug:
     msg: "user output is {{user}}"
   
